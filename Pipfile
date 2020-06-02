@@ -1,0 +1,29 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = "*"
+flask-restx = "*"
+flask-sqlalchemy = "*"
+flask-cors = "*"
+psutil = "*"
+uptime = "*"
+black = "*"
+py-cpuinfo = "*"
+mypy = "*"
+isort = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+app = "python app.py"
+format = "black --target-version py36 ."
+isort = "isort -rc ."
