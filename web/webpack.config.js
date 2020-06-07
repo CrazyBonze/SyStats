@@ -12,7 +12,7 @@ module.exports = {
         plugins: [
                 new CleanWebpackPlugin(),
                 new HtmlWebpackPlugin({
-                        title: 'Caching',
+                        title: 'SyStats',
                 }),
         ],
         module: {
