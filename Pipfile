@@ -27,3 +27,4 @@ allow_prereleases = true
 app = "python app.py"
 format = "black --target-version py36 ."
 isort = "isort -rc ."
+type = "mypy ."

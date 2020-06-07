@@ -1,17 +1,14 @@
-//import 'construct-ui/lib/index.css'
+import { mount, route, m } from "mithril";
 import "construct-ui/lib/index.css";
-import { m } from "mithril";
-import { Button } from "construct-ui";
 import { SystemStats } from "./views/SystemStats";
 
-const App = {
-        view: () => {
-                return m(Button,
-                        {
-                                label: "hello"
-                        }
-                )
-        }
-}
+const routes = {
+        "/": {
+                render: () => {
+                        return m(SystemStats)
+                }
+        },
+};
 
-m.mount(document.body, App) //SystemStats)
+//mount(document.body, SystemStats)
+route(document.body, "/", routes)

@@ -1,17 +1,14 @@
 // src/models/System.js
-var m = require("mithril")
+import { request } from "mithril";
 
-var System = {
-        stats: null,
-        loadSystem: function() {
-                return m.request({
+export class System {
+
+        loadSystem() {
+                return request({
                         method: "GET",
                         url: "/api/stats/system",
-                }).then(function(result) {
-                        console.log(result);
-                        System.stats = result;
-                })
-        },
+                }).then((result) => {
+                        return result;
+                });
+        }
 }
-
-module.exports = System
