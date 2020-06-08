@@ -1,9 +1,9 @@
 import { m } from "mithril";
 
-export class Home {
+export class Settings {
         view() {
                 return [
-                        m('div', 'home view')
+                        m('div', 'settings view')
                 ]
         }
 }

@@ -18,7 +18,8 @@ export class SystemStats {
         }
 
         view() {
-                return m(Table, {id: ".system-stats"},
+                return [
+                        m(Table, {id: ".system-stats"},
                         [
                                 m("tr", {}, [
                                         m("th", 'System ID'),
@@ -58,5 +59,6 @@ export class SystemStats {
                                 ])
                         ]
                 )
+                ]
         }
 }
